@@ -46,7 +46,7 @@ function iterativeFibonacci2(value) {
     return fibonacciSeries[value]
 }
 
-// time complexity = O (N)
+// time complexity = O (2^n)
 // space complexity = O (1)
 // Concise code
 function recursiveFibonacci(value) {
