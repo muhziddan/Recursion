@@ -10,4 +10,13 @@ function reverseString(str) {
     return result.join('')
 }
 
-console.log(reverseString("test"))
+function recursionReverse(str) {
+    if (str === "") {
+        return ""
+    } else {
+        console.log(str.substring(1) + str.charAt(0))
+        return recursionReverse(str.substring(1)) + str.charAt(0)
+    }
+}
+
+console.log(recursionReverse("test"))
