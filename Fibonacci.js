@@ -11,10 +11,8 @@ function iterativeFibonacci(value) {
     let n2 = 1
     let counter = 2
 
-    if (value === n1) {
-        return n1
-    } else if (value === n2) {
-        return n2
+    if (value < 2) {
+        return value
     }
 
     while (counter <= value) {
@@ -48,9 +46,17 @@ function iterativeFibonacci2(value) {
     return fibonacciSeries[value]
 }
 
+// time complexity = O (N)
+// space complexity = O (1)
+// Concise code
 function recursiveFibonacci(value) {
-    return 0
+    if (value < 2) {
+        return value
+    }
+
+    return recursiveFibonacci(value - 1) + recursiveFibonacci(value - 2)
 }
 
 console.log(iterativeFibonacci(9))
 console.log(iterativeFibonacci2(9))
+console.log(recursiveFibonacci(9))
