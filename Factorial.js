@@ -18,7 +18,6 @@ function iterativeFactorial(value) {
     
     for (let i = value; i > 1; i--) {
         value = value * (i-1)
-        console.log(value + " " + i)
     }
 
     return value
