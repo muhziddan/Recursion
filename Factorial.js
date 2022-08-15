@@ -1,6 +1,6 @@
 //Write factorial function with 2 approach -> 1. Recursive and 2. Iterative
 
-function recursiveFactorial(value) {
+function recursiveFactorial(value) {// O (n)
     if (value === 0) {
         return 1
     }
@@ -14,7 +14,7 @@ function recursiveFactorial(value) {
     return value * recursiveFactorial(value - 1)
 }
 
-function iterativeFactorial(value) {
+function iterativeFactorial(value) { // O (n)
     // let result = 0
     if (value === 0) {
         return 1
