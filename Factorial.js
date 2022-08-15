@@ -5,6 +5,12 @@ function recursiveFactorial(value) {
         return 1
     }
 
+    //or it can also be
+    // if (value === 2) {
+    //     return 2
+    // }
+    //because factorial of 2, is 2
+
     return value * recursiveFactorial(value - 1)
 }
 
